@@ -53,7 +53,7 @@ Reproducing results on the BrnoCompSpeed dataset
 
 3. Compute homographies given a pretrained model.
 
-    `python run_brnocompspeed.py compute_homographies --dataset-dir /path/to/brnocompspeed --num-frames 5000 --model models/pretrained.pt`
+    `python run_brnocompspeed.py compute_homographies --dataset-dir /path/to/brnocompspeed --num-frames 5000 --model models/trained_transformer.pt`
 
     This will write all homographies in `/path/to/brnocompspeed/homography/`.
 
@@ -64,7 +64,7 @@ Reproducing results on the BrnoCompSpeed dataset
 
 4. Optionally, you can have a quick evaluation of the homographies.
 
-    `python run_brnocompspeed.py evaluate_homographies --dataset-dir /path/to/brnocompspeed --model models/trained_transformer.pt`
+    `python run_brnocompspeed.py evaluate_homographies --dataset-dir /path/to/brnocompspeed`
 
     *Note*: these results are computed based on **ground-truth boxes**, 
     hence the output results does not reflect the actual accuracy of the full system
